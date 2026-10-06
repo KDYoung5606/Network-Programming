@@ -1,3 +1,6 @@
+// 2271323 김동영
+
+
 package week6.calcserver;
 
 import java.awt.BorderLayout;
@@ -111,11 +114,9 @@ public class CalcServerGUI extends JFrame {
 
   private class ClientHandler extends Thread {
     private Socket clientSocket;
-
     public ClientHandler(Socket clientSocket) {
       this.clientSocket = clientSocket;
     }
-
     @Override
     public void run() {
       receiveMessages(clientSocket);
